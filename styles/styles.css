@@ -1,0 +1,669 @@
+/* .tienne-regular {
+  font-family: "Tienne", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tienne-bold {
+  font-family: "Tienne", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.tienne-black {
+  font-family: "Tienne", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.crimson-text-regular {
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.crimson-text-semibold {
+  font-family: "Crimson Text", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.crimson-text-bold {
+  font-family: "Crimson Text", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.crimson-text-regular-italic {
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.crimson-text-semibold-italic {
+  font-family: "Crimson Text", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.crimson-text-bold-italic {
+  font-family: "Crimson Text", serif;
+  font-weight: 700;
+  font-style: italic;
+} */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+
+}
+
+:root{
+    --very-dark-blue: #041C32;
+    --very-dark-lighter-blue: #04293A;
+    --darky-aqua: #064663;
+    --darky-light-aqua: #06466380;
+    --darky-yellow: #ECB365;
+
+}
+
+html {
+    height: 100%;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;   
+    padding: 0;
+    margin: 0;
+
+}
+
+header {
+    display: flex;             
+    justify-content: space-between;
+    align-items: center;      
+    padding: 10px 20px;
+    background-color: var(--darky-aqua);  
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;       
+    gap: 10px;                
+}
+
+
+.header-logo h1{
+    font-family: "Tienne", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+
+}
+
+.header-logo a{
+    color: #fff;
+    text-decoration: none;
+
+}
+
+
+.header-logo img {
+    width: 50px;              
+    height: auto;
+}
+
+.navbar-list {
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+    display: flex;
+    gap: 20px;                 
+    list-style: none;          
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    cursor: pointer;
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: #fff;
+
+}
+
+
+.nav-item a:hover{
+    text-decoration: underline;
+
+}
+
+
+.hero-section {
+    background-color: var(--very-dark-blue);
+    background-image: url("../img/mistic-representation-holy-week.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+
+}
+
+
+.hero-section-CTA {
+    padding-left: 10%;
+
+}
+
+.hero-section-CTA h2{
+    font-family: "Tienne", serif;
+    font-weight: 700;
+    font-size: 42px;
+    font-style: normal;
+    color: #fff;
+    max-width: 70%;
+    text-align: justify;
+
+}
+
+.hero-section-CTA p{
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: #fff;
+    max-width: 600px;
+    text-align: justify;
+
+
+}
+
+.hero-section-CTA button{
+    font-family: "Crimson Text", serif;
+    font-weight: 700;
+    font-style: normal;
+    background-color: var(--darky-yellow);
+    color: #fff;
+    border: none;
+    height: 42px;
+    width: 20%;
+    cursor: pointer;
+
+}
+
+.values-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 48px;
+    height: 70vh;
+
+}
+
+.values-section .card-container {
+    display: flex;
+    align-items: stretch;
+
+}
+
+.values-section .card-container .card {
+    padding: 24px;
+    margin: 12px;
+    text-align: center;
+
+}
+
+.more-info-section {
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url("../img/holy-communion-concept-with-bible.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+
+
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+
+}
+
+
+.info-container h2 {
+    font-family: "Tienne", serif;
+    font-weight: 700;
+    font-size: 42px;
+    font-style: normal;
+    max-width: 60%;
+    margin: 12px;
+
+}
+
+.info-container p{
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    max-width: 50%;
+    margin: 12px;
+
+}
+
+.info-container button {
+    border: none;
+    background-color: #064663;
+    color: #fff;
+    width: 20%;
+    height: 42px;
+    margin: 12px;
+
+
+}
+
+.news-section {
+    background-image: url("../img/holy-week-celebration.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 120vh;
+
+
+}
+
+.news-section .news-container {
+    display: flex;
+
+}
+
+
+.news-section .news-container .news-card-container {
+    display: flex;
+    
+}
+
+.news-section .news-container .news-card-container .news-card {
+    margin: 8px;
+    background-color: #fff;
+    height: 70vh;
+    width: 50vh;
+    border-radius: 20px;
+    position: relative;
+    overflow: visible;
+
+}
+
+.news-section .news-container .news-card-container .news-card img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 14px 14px 0 0;
+
+}
+
+
+.news-section .news-container .news-card-container .news-card .news-card-box-container {
+    position: absolute;
+    bottom: 30px;      
+    left: 3%;       
+    width: 95%;        
+
+    height: 250px;    
+    display: flex;
+}
+
+
+.news-section .news-container .news-card-container .news-card .news-card-overlay-box {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 4px;
+    color: black;
+    padding: 24px;
+    width: 100%;
+    height: 100%;    
+    text-align: left;
+    box-shadow: 10px 10px 25px rgba(228, 228, 228, 0.2); 
+    
+}
+
+
+
+.news-section .news-container .news-card-container .news-card .news-card-overlay-box h1 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.news-section .news-container .news-card-container .news-card .news-card-overlay-box p {
+    margin-top: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.news-section .news-container .news-card-container .news-card .news-card-overlay-box span {
+    margin-bottom: 10px;
+}
+
+.donate-section {
+    background-color: var(--very-dark-blue);
+    width: 100%;
+    height: 100vh;
+    padding: 48px;
+
+}
+
+.donate-section .donate-container {
+    background-image: linear-gradient(rgba(98, 95, 145, 0.5), 
+    rgba(0, 0, 0, 0.5)), url("../img/mike-labrum-fvl4b1gjpbk-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.donate-section .donate-container h2{
+    font-family: "Tienne", serif;
+    font-weight: 700;
+    font-size: 42px;
+    font-style: normal;
+    margin-bottom: 12px;
+    color: #fff;
+
+
+}
+
+.donate-section .donate-container p{
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    margin-top: 24px;
+    color: #fff;
+    max-width: 50%;
+
+
+}
+
+.donate-section .donate-container button{
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    margin-top: 24px;
+    border: none;
+    color: rgb(50, 43, 122);
+    background-color: #fff;
+    width: 15%;
+    height: 42px;
+    cursor: pointer;
+
+}
+
+.footer-info {
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--darky-yellow);
+}
+
+.footer-info .footer-info-container {
+    display: flex;
+    width: 90%;         
+    max-width: 1200px;   
+    justify-content: space-between; 
+    align-items: flex-start; 
+    font-family: "Crimson Text", serif;
+
+}
+
+.footer-info .footer-info-container h2{
+    font-family: "Tienne", serif;
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+
+
+.footer-info .footer-info-container ul{
+    list-style: none;
+    padding-top: 24px;
+
+}
+
+.footer-info .footer-info-container ul li{
+    list-style: none;
+    margin-top: 12px;
+
+}
+
+
+.footer-info .footer-info-container .follow-us ul li{
+    display: inline-flex;
+    
+
+}
+
+
+
+.footer-info .navigation-info .navigation-info-links  {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer-info .navigation-info .navigation-info-links  a{
+    text-decoration: none;
+    color: black;
+
+}
+
+.footer-copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+    background-color: var(--very-dark-lighter-blue);
+    color: white;
+
+}
+
+.footer-copyright .copyright-container span {
+    font-family: "Crimson Text", serif;
+    font-weight: 700;
+    font-style: normal;
+
+
+}
+
+
+@media (max-width: 720px){
+    .navbar{
+        display: none;
+
+    }
+
+}
+
+
+
+
+/* Estilos Acerca de */
+
+.about-us-display {
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url(../img/josh-applegate-TkFw4tgpTDME.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: auto; 
+    min-height: 540px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+
+.about-us-display .about-us-display-container{
+    color: #fff;
+
+
+}
+
+
+.about-us-display .about-us-display-container h2{
+    margin-bottom: 8px;
+    font-family: "Tienne", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 32px;
+
+
+}
+
+
+.about-us-display .about-us-display-container p{
+    margin-top: 4px;
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+
+}   
+
+.about-us-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--very-dark-lighter-blue);
+  
+
+}
+
+.about-us-info .about-us-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.about-us-info .about-us-info-container h2{
+    font-family: "Tienne", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #fff;
+    font-size: 32px;
+
+}
+
+.about-us-info .about-us-info-container p{
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+    font-size: 18px;
+
+}
+
+
+
+.about-us-text-container, 
+.about-us-img-container {
+    flex: 1;         
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 72px 90px 72px 90px;     
+}
+
+.about-us-text-container {
+   
+}
+
+
+.about-us-info .about-us-img-container img{
+    max-width: 100%;  
+    height: auto;    
+    object-fit: cover;
+    border-radius: 12px;
+
+}
+
+.about-us-info-container:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+
+.about-us-team {
+    background-color: var(--very-dark-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+
+.about-us-team .about-us-team-container {
+    padding: 24px;
+}
+
+.about-us-team .about-us-team-container .about-us-team-title h2 {
+    font-family: "Tienne", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    color: #fff;
+    padding: 14px;
+
+}
+
+.about-us-team .about-us-team-container .about-us-team-img {
+    padding: 14px;
+
+}
+
+.about-us-team .about-us-team-container .about-us-team-img img {
+    border-radius: 12px;
+
+}
