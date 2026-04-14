@@ -8,8 +8,14 @@ document.addEventListener("DOMContentLoaded", () => {
             { id: 1, src: "img/Acolitos_todos.jpeg" },
             { id: 2, src: "img/Sacerdote.jpeg" },
             { id: 3, src: "img/Parroquia.jpeg" },
-            { id: 4, src: "img/santo.jpeg" },
-            { id: 5, src: "img/luz.jpeg" }
+            { id: 4, src: "img/altar-verde.jpeg" },
+            { id: 5, src: "img/luz.jpeg" },
+            { id: 6, src: "img/img_7.png" },
+            { id: 7, src: "img/img_5.png" },
+            { id: 8, src: "img/acolitos-sacerdote.jpeg" },
+            { id: 9, src: "img/acolitos-SP.jpeg" },
+            { id: 9, src: "img/sacerdote-caliz-hostia.jpeg" },
+
         ]
     };
 

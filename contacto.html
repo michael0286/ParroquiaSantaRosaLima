@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acerca de Nosotros Acólitos de la Parroquia Santa Rosa de Lima</title>
-    <meta name="description" content="Lee acerca de la visión y misión de los acólitos de la Parroquia de Santa Rosa de Lima.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Tienne:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/styles.css">
+    <title>Contacto Acólitos Parroquia Santa Rosa de Lima</title>
+    <meta name="description" content="Contacta a la Parroquia Santa Rosa de Lima, donde también se muestran los datos de contacto como el número y teléfono.">
     <script src="js/burguer.js"></script>
+    <script src="js/validacionContacto.js"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Tienne:wght@400;700;900&display=swap" rel="stylesheet">
+
 </head>
 <body>
-   <header class="header">
+    <header class="header">
         <div class="header-logo">
             <img class="burguer" src="img/icons8-menu-70.png" alt="logo-parroquia-santa-rosa-lima">
             <h1 class="header-title"><a href="index.html">Acólitos Santa Rosa de Lima</a></h1>
@@ -33,64 +33,54 @@
         </nav>
     </header>
     <main>
-       <section class="about-us-display">
-            <picture class="about-bg">
-                <source srcset="img/mistic-representation-holy-week.jpg" media="(min-width:1025px)">
-                <source srcset="img/mistic-representation-holy-week.jpg" media="(min-width:720px)">
-                <img src="img/mistic-representation-holy-week.jpg" alt="Un rosario de madera con un fondo azul" />
-            </picture>
+        <section class="contact-section">
+            <div class="contact-section-container">
+                <div class="explanation-container">
+                    <div class="contact-title-container">
+                        <h2>Contáctanos</h2>
+                        <p>Ponte en contacto con uno de nuestros miembros para resolver tus dudas y saber más acerca de nosotros.  <br>
+                            Tómate la libertad de contáctarnos por cualquiera de los siguientes medios:</p>
+                    </div>
+                    <div class="contact-info-container">
+                        <ul>
+                            <li>
+                                <img src="img/email-icon.png" alt="Email">
+                                <span>parroquia@gmail.com</span>
+                            </li>
+                            <li>
+                                <img src="img/address-icon.png" alt="Ubicación">
+                                <span>5ta Avenida frente a Pulpería Alba</span>
+                            </li>
+                            <li>
+                                <img src="img/phone-icon.png" alt="Teléfono">
+                                <span>+504 1234-5678</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="form-container">
+                    <form action="index.html" method="GET" id="contactForm">
+                        <div id="txtNombreDiv">
+                            <input type="text" name="txtNombre" id="txtNombre" placeholder="Nombre" />
+                        </div>
+                        
+                        <div id="txtCorreoDiv">
+                            <input type="email" name="txtCorreoElectronico" id="txtCorreoElectronico" placeholder="Correo Electrónico" />
+                        </div>
+                        
+                        <div id="txtMsjDiv">
+                            <textarea id="txtMsj" name="txtMsj" placeholder="Escribe tu mensaje"></textarea>
+                        </div>
 
-            <div class="about-us-display-container">
-                <h2>Acerca de Nosotros</h2>
-                <p>Parroquia de Santa Rosa de Lima</p>
-            </div>
-     </section>
-        <section class="about-us-info">
-            <div class="about-row">
-                <div class="about-text">
-                    <h2>¿Quiénes Somos?</h2>
-                    <p>Somos el grupo de acólitos de la Parroquia Santa Rosa de Lima, una comunidad de jóvenes y adultos llamados al servicio del altar. Nuestra labor principal es asistir a los sacerdotes durante la celebración de la Santa Eucaristía.</p>
-                </div>
-                <div class="about-img">
-                    <img src="img/acolito-1.jpeg" alt="Dibujo animado de San Tarcisio de niño">
-                </div>
-            </div>
-
-            <div class="about-row">
-                <div class="about-text">
-                    <h2>Misión</h2>
-                    <p>Nuestra misión es servir con reverencia y dignidad en el altar del Señor, facilitando la liturgia para que la comunidad pueda encontrarse con Dios. Buscamos formarnos integralmente en la fe católica.</p>
-                </div>
-                <div class="about-img">
-                    <img src="img/santo.jpeg" alt="Imagen animada de San Tarcisio de adolescente">
-                </div>
-            </div>
-
-            <div class="about-row">
-                <div class="about-text">
-                    <h2>Visión</h2>
-                    <p>Aspiramos a ser un grupo de referencia en la formación litúrgica y espiritual, reconocido por nuestra piedad y compromiso. Queremos ser un semillero de vocaciones.</p>
-                </div>
-                <div class="about-img">
-                    <img src="img/custodio.jpeg" alt="Imagen de un custodio con un fondo azul y blanco">
-                </div>
-            </div>
-        </section>
-        <section class="about-us-team">
-            <div class="about-us-team-container">
-                <div class="about-us-team-title">
-                    <h2>Conoce a Nuestros Miembros</h2>
-                    <div class="title-underline"></div>
-                </div>
-                
-                <div class="about-us-team-img-wrapper">
-                    <img src="img/miembros.jpeg" alt="Miembros de la parroquia Santa Rosa de Lima">
-                    <div class="img-overlay"></div> 
+                        <button id="btnEnviar" name="btnEnviar" type="submit">
+                            Procesar
+                        </button>
+                    </form>
                 </div>
             </div>
         </section>
     </main>
-   <footer>
+      <footer>
         <section class="footer-info">
                 <div class="footer-info-container">
                     <div class="follow-us">

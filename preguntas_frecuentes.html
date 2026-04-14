@@ -4,277 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Preguntas Frecuentes | Acólitos Santa Rosa de Lima</title>
+  <meta name="description" content="Consulta preguntas frequentes para resolver tus dudas">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Tienne:wght@400;700;900&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --red-main:#ff665f;
-      --red-footer:#c8102e;
-      --pink-menu:#e9b3ad;
-      --pink-bottom:#f28b82;
-      --white:#ffffff;
-      --shadow:0 10px 30px rgba(167,0,0,.18);
-      --card-bg:rgba(255,186,186,.20);
-      --light-border:rgba(255,255,255,.18);
-    }
-
-    *{margin:0;padding:0;box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{
-      font-family:"Crimson Text", serif;
-      background:linear-gradient(180deg, #ffbaba 0%, #ff7b7b 50%, #ff5252 100%);
-      color:#fff;
-      line-height:1.6;
-      overflow-x:hidden;
-    }
-    h1,h2,h3,h4{font-family:"Tienne", serif}
-    a{text-decoration:none;color:inherit}
-    .container{width:min(1120px,92%);margin:0 auto}
-
-    /* HEADER */
-    .topbar{
-      background:rgba(255,102,95,.92);
-      backdrop-filter:blur(8px);
-      border-bottom:1px solid rgba(255,255,255,.15);
-      position:sticky;
-      top:0;
-      z-index:1000;
-    }
-    .nav{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:20px;
-      padding:16px 0;
-    }
-    .brand-text h1{font-size:1.55rem;line-height:1.1}
-    .brand-text p{font-size:1rem;color:rgba(255,255,255,.92)}
-    .nav-links{
-      display:flex;
-      gap:22px;
-      flex-wrap:wrap;
-      align-items:center;
-      font-size:1.05rem;
-      font-weight:700;
-    }
-    .nav-links a:hover{opacity:.85}
-
-    /* SIDE MENU */
-    .menu-toggle{
-      position:fixed;
-      top:18px;
-      left:18px;
-      width:46px;
-      height:46px;
-      border:none;
-      border-radius:12px;
-      background:rgba(255,255,255,.18);
-      color:#fff;
-      font-size:1.4rem;
-      cursor:pointer;
-      z-index:1201;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      box-shadow:var(--shadow);
-    }
-    .side-menu{
-      position:fixed;
-      top:0;
-      left:-340px;
-      width:330px;
-      max-width:88vw;
-      height:100vh;
-      background:var(--pink-menu);
-      color:#fff;
-      padding:22px 18px 30px;
-      z-index:1200;
-      transition:left .35s ease;
-      box-shadow:18px 0 35px rgba(0,0,0,.16);
-      overflow-y:auto;
-    }
-    .side-menu.open{left:0}
-    .menu-head{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      margin-bottom:24px;
-    }
-    .menu-head h2{
-      font-size:1.5rem;
-      color:#fff;
-    }
-    .close-menu{
-      border:none;
-      background:transparent;
-      color:#fff;
-      font-size:2.2rem;
-      line-height:1;
-      cursor:pointer;
-    }
-    .menu-list{
-      list-style:none;
-      display:flex;
-      flex-direction:column;
-      gap:22px;
-      margin-top:16px;
-    }
-    .menu-list a{
-      display:block;
-      color:#fff;
-      font-size:1.25rem;
-      font-weight:700;
-      padding:4px 0;
-    }
-    .menu-list a:hover{opacity:.8}
-    .menu-overlay{
-      position:fixed;
-      inset:0;
-      background:rgba(0,0,0,.28);
-      z-index:1190;
-      display:none;
-    }
-    .menu-overlay.show{display:block}
-
-    /* HERO */
-    .hero{
-      padding:86px 0 58px;
-      background:
-        linear-gradient(rgba(255,123,123,.60), rgba(255,82,82,.72)),
-        radial-gradient(circle at top left, rgba(255,186,186,.35), transparent 35%),
-        radial-gradient(circle at bottom right, rgba(255,186,186,.18), transparent 30%);
-    }
-    .hero-grid{
-      display:grid;
-      grid-template-columns:1.1fr .9fr;
-      gap:34px;
-      align-items:center;
-    }
-    .eyebrow{
-      display:inline-block;
-      padding:7px 14px;
-      border-radius:999px;
-      margin-bottom:18px;
-      background:rgba(255,186,186,.25);
-      color:#fff;
-      border:1px solid rgba(255,123,123,.35);
-      font-size:1rem;
-    }
-    .hero h2{
-      font-size:clamp(2rem, 5vw, 3.6rem);
-      line-height:1.1;
-      margin-bottom:16px;
-    }
-    .hero p{
-      font-size:1.2rem;
-      color:rgba(255,255,255,.94);
-      max-width:670px;
-    }
-    .hero-card{
-      background:rgba(255,186,186,.22);
-      border:1px solid rgba(255,123,123,.28);
-      border-radius:28px;
-      padding:22px;
-      box-shadow:var(--shadow);
-    }
-    .hero-card h3{
-      margin-bottom:12px;
-      font-size:1.6rem;
-    }
-
-    /* CONTENT */
-    .section{padding:78px 0}
-    .section-title{
-      text-align:center;
-      max-width:760px;
-      margin:0 auto 38px;
-    }
-    .section-title h2{
-      font-size:clamp(1.8rem, 4vw, 2.8rem);
-      margin-bottom:12px;
-    }
-    .section-title p{
-      font-size:1.15rem;
-      color:rgba(255,255,255,.92);
-    }
-    .faq-grid{
-      display:grid;
-      grid-template-columns:repeat(2, 1fr);
-      gap:22px;
-    }
-    .faq-card{
-      background:var(--card-bg);
-      border:1px solid rgba(255,123,123,.22);
-      border-radius:24px;
-      padding:28px;
-      box-shadow:var(--shadow);
-    }
-    .faq-card h3{
-      margin-bottom:12px;
-      font-size:1.45rem;
-    }
-    .faq-card p{
-      color:rgba(255,255,255,.92);
-      font-size:1.08rem;
-    }
-    .info-panel{
-      margin-top:30px;
-      background:rgba(255,186,186,.22);
-      border:1px solid rgba(255,123,123,.28);
-      border-radius:24px;
-      padding:30px;
-      box-shadow:var(--shadow);
-    }
-    .info-panel h3{
-      font-size:1.8rem;
-      margin-bottom:10px;
-    }
-    .info-panel ul{padding-left:20px;margin-top:10px}
-    .info-panel li{margin-bottom:10px;font-size:1.08rem}
-
-    /* FOOTER */
-    footer{
-      background:var(--red-footer);
-      border-top:1px solid rgba(255,255,255,.2);
-      padding:32px 0 0;
-      color:#fff;
-    }
-    .footer-grid{
-      display:flex;
-      justify-content:space-between;
-      gap:24px;
-      flex-wrap:wrap;
-      padding-bottom:26px;
-    }
-    footer h3, footer p, footer a, footer li{
-      color:#ffffff;
-    }
-    .footer-links{
-      display:flex;
-      gap:18px;
-      flex-wrap:wrap;
-      align-items:center;
-    }
-    .footer-bottom{
-      background:var(--pink-bottom);
-      text-align:center;
-      padding:10px;
-      font-size:14px;
-      color:#fff;
-    }
-
-    @media (max-width:900px){
-      .hero-grid,.faq-grid{grid-template-columns:1fr}
-      .nav{padding-left:62px}
-      .nav-links{display:none}
-    }
-  </style>
+  <link rel="stylesheet" href="styles/preguntas.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="js/burguer.js"></script>
 </head>
 <body>
-  <button class="menu-toggle" id="openMenu" aria-label="Abrir menú">☰</button>
-  <div class="menu-overlay" id="menuOverlay"></div>
-
+  <!-- <button class="menu-toggle" id="openMenu" aria-label="Abrir menú">☰</button>
+  <div class="menu-overlay" id="menuOverlay"></div> -->
+<!-- 
   <aside class="side-menu" id="sideMenu">
     <div class="menu-head">
       <h2>Menú</h2>
@@ -290,28 +31,32 @@
       <li><a href="#">Preguntas Frecuentes</a></li>
       <li><a href="#">Contáctanos</a></li>
     </ul>
-  </aside>
+  </aside> -->
 
-  <header class="topbar">
-    <div class="container nav">
-      <div class="brand-text">
-        <h1>Acólitos Santa Rosa de Lima</h1>
-        <p>Formación, servicio y fe</p>
-      </div>
-
-      <nav class="nav-links">
-        <a href="#">Inicio</a>
-        <a href="#">Acerca de</a>
-        <a href="#">Ayúdanos</a>
-        <a href="#">Contáctanos</a>
-      </nav>
-    </div>
-  </header>
-
+ <header class="header">
+        <div class="header-logo">
+            <img class="burguer" src="img/icons8-menu-70.png" alt="logo-parroquia-santa-rosa-lima">
+            <h1 class="header-title"><a href="index.html">Acólitos Santa Rosa de Lima</a></h1>
+        </div>
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li class="nav-item" id="nav-home"><a href="index.html">Inicio</a></li>
+                <li class="nav-item" id="nav-about"><a href="about-us.html">Acerca de</a></li>
+                <li class="nav-item" id="nav-programs"><a href="nuestros.html">Nuestros Programas</a></li>
+                <li class="nav-item" id="nav-help"><a href="lectura.html">Lectura</a></li>
+                <li class="nav-item" id="nav-gallery"><a href="galeria.html">Galería</a></li>
+                <li class="nav-item" id="nav-blog"><a href="blog.html">Blog</a></li>
+                <li class="nav-item" id="nav-events"><a href="Eventos.html">Eventos</a></li>
+                <li class="nav-item" id="nav-contact"><a href="contacto.html">Contáctanos</a></li>
+                <li class="nav-item" id="nav-donate"><a href="Donaciones.html">Donar</a></li>
+                <li class="nav-item" id="nav-faqs"><a href="preguntas_frecuentes.html">Preguntas Frequentes</a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
   <section class="hero">
     <div class="container hero-grid">
       <div>
-        <span class="eyebrow">Dudas comunes</span>
         <h2>Preguntas Frecuentes sobre los Acólitos</h2>
         <p>
           En esta sección encontrarás respuestas claras sobre quiénes pueden ser acólitos,
@@ -414,57 +159,67 @@
       </div>
     </div>
   </section>
+</main>
+<footer>
+        <section class="footer-info">
+                <div class="footer-info-container">
+                    <div class="follow-us">
+                        <div class="follow-us-title">
+                            <h2>Síguenos</h2>
+                        </div>
+                        <div class="follow-us-social-icons">
+                            <ul>
+                                <li><a href="https://www.facebook.com/share/1B7vnVqkEU/" target="_blank"><img src="img/fb-icon.png" alt="instagram logo"></a></li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                    <div class="address-info">
+                        <div class="address-info-title">
+                            <h2>Ubicación</h2>
+                        </div>
+                        <div class="address-info-location">
+                            <ul>
+                                <li>Guaimaca</li>
+                                <li>Parroquia Santa Rosa de Lima</li>
+                                <li>Barrio, El Centro</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-info-title">
+                            <h2>Contacto</h2>
+                        </div>
+                        <div class="contact-info-contact">
+                            <ul>
+                                <li><span>1234-5678</span></li>
+                                <li><span>parroquia@gmail.com</span></li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                    <div class="navigation-info">
+                        <div class="navigation-info-title">
+                            <h2>Explorar</h2>
+                        </div>
+                        <div class="navigation-info-links">
+                            <ul>
+                                <li><a href="about-us.html">Acerca de</a></li>
+                                <li><a href="contacto.html">Contáctanos</a></li>
+                                <li><a href="Donaciones.html">Donar</a></li>
+                                <li><a href="preguntas_frecuentes.html">Preguntas Frequentes</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr>
 
-  <footer>
-    <div class="container footer-grid">
-      <div>
-        <h3>Síguenos</h3>
-        <p>Comparte nuestra misión y acompáñanos en este camino de fe y servicio.</p>
-      </div>
-
-      <div>
-        <h3>Ubicación</h3>
-        <p>Templo de Santa Rosa de Lima</p>
-        <p>Guaimaca, Honduras</p>
-      </div>
-
-      <div>
-        <h3>Contacto</h3>
-        <p>parroquia@gmail.com</p>
-        <p>1234-5678</p>
-      </div>
-
-      <div>
-        <h3>Explorar</h3>
-        <div class="footer-links">
-          <a href="#">Inicio</a>
-          <a href="#">Blog</a>
-          <a href="#">Preguntas Frecuentes</a>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">Parroquia SRL © Todos los Derechos Reservados</div>
-  </footer>
-
-  <script>
-    const sideMenu = document.getElementById('sideMenu');
-    const openMenu = document.getElementById('openMenu');
-    const closeMenu = document.getElementById('closeMenu');
-    const overlay = document.getElementById('menuOverlay');
-
-    function abrirMenu() {
-      sideMenu.classList.add('open');
-      overlay.classList.add('show');
-    }
-
-    function cerrarMenu() {
-      sideMenu.classList.remove('open');
-      overlay.classList.remove('show');
-    }
-
-    openMenu.addEventListener('click', abrirMenu);
-    closeMenu.addEventListener('click', cerrarMenu);
-    overlay.addEventListener('click', cerrarMenu);
-  </script>
+            <section class="footer-copyright">
+                <div class="copyright-container">
+                    <span>Parroquia SRL &copy; Todos los Derechos Reservados </span>
+                </div>
+            </section>
+    </footer>
 </body>
 </html>

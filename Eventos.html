@@ -4,28 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calendario de Acólitos</title>
+    <meta name="description" content="Revisa el calendario de la iglesia para revisar los eventos disponibles.">
     <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Tienne:wght@400;700;900&display=swap" rel="stylesheet">
     <script src="js/burguer.js"></script>
 </head>
 <body>
 
-     <header class="header">
+    <header class="header">
         <div class="header-logo">
-            <img class="burguer" src="img/icons8-menu-70.png" alt="logo-parroquia-santa-rosa-lima">
+            <img class="burguer" src="img/icons8-menu-70.png" alt="Burguer menu para abrir un sidebar">
             <h1 class="header-title"><a href="index.html">Acólitos Santa Rosa de Lima</a></h1>
         </div>
         <nav class="navbar">
             <ul class="navbar-list">
                 <li class="nav-item" id="nav-home"><a href="index.html">Inicio</a></li>
                 <li class="nav-item" id="nav-about"><a href="about-us.html">Acerca de</a></li>
-                <li class="nav-item" id="nav-programs"><a href="#">Nuestros Programas</a></li>
-                <li class="nav-item" id="nav-help"><a href="#">Ayúdanos</a></li>
-                <li class="nav-item" id="nav-gallery"><a href="#">Galería</a></li>
-                <li class="nav-item" id="nav-blog"><a href="#">Blog</a></li>
-                <li class="nav-item" id="nav-events"><a href="#">Eventos</a></li>
-                <li class="nav-item" id="nav-contact"><a href="#">Contáctanos</a></li>
-                <li class="nav-item" id="nav-donate"><a href="#">Donar</a></li>
-                <li class="nav-item" id="nav-faqs"><a href="#">Preguntas Frequentes</a></li>
+                <li class="nav-item" id="nav-programs"><a href="nuestros.html">Nuestros Programas</a></li>
+                <li class="nav-item" id="nav-help"><a href="lectura.html">Lectura</a></li>
+                <li class="nav-item" id="nav-gallery"><a href="galeria.html">Galería</a></li>
+                <li class="nav-item" id="nav-blog"><a href="blog.html">Blog</a></li>
+                <li class="nav-item" id="nav-events"><a href="Eventos.html">Eventos</a></li>
+                <li class="nav-item" id="nav-contact"><a href="contacto.html">Contáctanos</a></li>
+                <li class="nav-item" id="nav-donate"><a href="Donaciones.html">Donar</a></li>
+                <li class="nav-item" id="nav-faqs"><a href="preguntas_frecuentes.html">Preguntas Frequentes</a></li>
             </ul>
         </nav>
     </header>
@@ -52,7 +54,6 @@
         </div>
 
     </div>
-            
             <div class="imagen">
                 <img id="imagenEvento" src="" alt="Imagen del evento mas proximo" width="auto" height="600">
             </div>
@@ -62,7 +63,7 @@
 
     
     <section id="agenda" style="display: none;">
-        <h1 class="titulo-agenda">📅 Agenda de Acólitos</h1>
+        <h1 class="titulo-agenda">Agenda de Acólitos</h1>
 
         <div class="filtros">
             <button onclick="filtrar('todos')">Todos</button>
@@ -80,7 +81,7 @@
 
     <!-- Todo lo que hice para la pagina de eventos -->
 
-     <footer>
+<footer>
         <section class="footer-info">
                 <div class="footer-info-container">
                     <div class="follow-us">
@@ -89,9 +90,7 @@
                         </div>
                         <div class="follow-us-social-icons">
                             <ul>
-                                <li><img src="img/icons8logo50.png" alt="instagram logo"></li>
-                                <li><img src="img/icons8logo50.png" alt="facebook logo"></li>
-                                <li><img src="img/icons8logo50.png" alt="youtube logo"></li>
+                                <li><a href="https://www.facebook.com/share/1B7vnVqkEU/" target="_blank"><img src="img/fb-icon.png" alt="instagram logo"></a></li>
                             </ul>
                             
                         </div>
@@ -102,9 +101,9 @@
                         </div>
                         <div class="address-info-location">
                             <ul>
-                                <li>Tegucigalpa, Guaimaca</li>
-                                <li>Pedregal</li>
-                                <li>5ta Avenida</li>
+                                <li>Guaimaca</li>
+                                <li>Parroquia Santa Rosa de Lima</li>
+                                <li>Barrio, El Centro</li>
                             </ul>
                         </div>
                     </div>
@@ -126,15 +125,17 @@
                         </div>
                         <div class="navigation-info-links">
                             <ul>
-                                <li><a href="#">Acerca de</a></li>
-                                <li><a href="#">Contáctanos</a></li>
-                                <li><a href="#">Donar</a></li>
-                                <li><a href="#">Preguntas Frequentes</a></li>
+                                <li><a href="about-us.html">Acerca de</a></li>
+                                <li><a href="contacto.html">Contáctanos</a></li>
+                                <li><a href="Donaciones.html">Donar</a></li>
+                                <li><a href="preguntas_frecuentes.html">Preguntas Frequentes</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </section>
+            <hr>
+
             <section class="footer-copyright">
                 <div class="copyright-container">
                     <span>Parroquia SRL &copy; Todos los Derechos Reservados </span>

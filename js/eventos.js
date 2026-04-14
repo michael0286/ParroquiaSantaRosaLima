@@ -4,15 +4,16 @@ const eventos = [
         fecha: "2026-04-21",
         hora: "08:00",
         lugar: "Parroquia Santa Rosa de Lima", 
-        imagen: "img/Martes_Desk.jpeg",
+        imagen: "img/Invitacion.jpeg",
         descripcion: "El Santo Rosario no es solo una oración, es un encuentro profundo con Dios a través de la Virgen María. Te invitamos a participar en este evento espiritual que une a la comunidad en un momento de paz, reflexión y fe compartida."
     },
+    
     {
         nombre: "Desfile Procesional",
         fecha: "2026-04-22",
         hora: "16:00",
         lugar: "Salón Parroquial",
-        imagen: "img/Desfile.jpeg",
+        imagen: "img/Sacerdote.jpeg",
         descripcion: "El servicio en el altar es un ministerio que requiere disciplina, respeto y amor por la liturgia. Para crecer en este servicio, es fundamental cultivar una actitud de oración y disponibilidad. El acólito debe llegar con puntualidad, preparado interiormente y con conocimiento de las funciones que desempeñará.",
     },
     {
