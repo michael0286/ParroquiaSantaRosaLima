@@ -8,7 +8,6 @@ const regexIsEmpty = /^\s*$/;
 const regexIsEmail = /^[\w.-]+@[\w.-]+\.\w{2,}$/;
 
 document.addEventListener("DOMContentLoaded", () => {
-    // Referencias a los elementos
     formulario = document.getElementById("contactForm");
     nombreInput = document.getElementById("txtNombre");
     correoInput = document.getElementById("txtCorreoElectronico");

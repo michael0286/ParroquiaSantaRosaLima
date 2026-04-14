@@ -19,7 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
         ]
     };
 
-    // Mostrar imágenes
     ParroquiaObj.fotos.forEach(foto => {
 
         const div = document.createElement("div");
@@ -30,7 +29,6 @@ document.addEventListener("DOMContentLoaded", () => {
         container.appendChild(div);
     });
 
-    // MODAL
     const modal = document.getElementById("modal");
     const modalImg = document.getElementById("modalImg");
     const close = document.querySelector(".close");

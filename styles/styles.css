@@ -195,70 +195,6 @@
     }
 
 
-/* 
-
-
-    .header-logo img {
-        display: block;
-    }
-
-    .header-logo h1{
-        font-size: 18px;
-
-    }
-
-    .navbar {
-        display: none;
-
-    }
-
-    .mobile-nav {
-        display: none; 
-        flex-direction: column;
-        background-color: var(--very-light-red);
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 70%; 
-        height: 100%; 
-        z-index: 9999; 
-        padding: 40px 20px;
-        text-align: left;
-        box-shadow: 5px 0 15px rgba(0,0,0,0.5); 
-    }
-
-    .mobile-nav.active {
-        display: flex;
-    }
-
-
-    .mobile-nav li {
-        list-style: none;
-        border-bottom: 1px solid rgba(255,255,255,0.1);
-    }
-
-    .mobile-nav li a {
-        color: white;
-        text-decoration: none;
-        font-family: "Crimson Text", serif;
-        font-size: 22px;
-        display: block;
-        padding: 20px 0;
-    }
-
-
-    .close-menu {
-        color: white;
-        font-size: 30px;
-        align-self: flex-end;
-        cursor: pointer;
-        margin-bottom: 20px;
-    }
-
-
-*/
-
-
 .navbar-list {
     font-family: "Crimson Text", serif;
     font-weight: 400;
@@ -966,12 +902,6 @@ footer{
 }
 
 
-
-
-
-
-/* Estilo Eventos */
-
 #principal {
     height: 100vh;
     background: var(--very-light-darker-red); 
@@ -1343,14 +1273,12 @@ footer{
 }
 
 
-/* ===== GALERÍA ===== */
 
 .gallery-section {
     padding: 80px 20px;
     background-color: var(--very-light-darker-red);
 }
 
-/* TÍTULO */
 .gallery-title {
     text-align: center;
     margin-bottom: 40px;
@@ -1368,14 +1296,12 @@ footer{
     color: #fff;
 }
 
-/* GRID DE IMÁGENES */
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
 
-/* TARJETAS */
 .gallery-item {
     overflow: hidden;
     border-radius: 15px;
@@ -1384,7 +1310,6 @@ footer{
     background-color: #fff;
 }
 
-/* IMÁGENES */
 .gallery-item img {
     width: 100%;
     height: 250px;
@@ -1392,13 +1317,11 @@ footer{
     transition: transform 0.4s ease, filter 0.3s ease;
 }
 
-/* EFECTO HOVER */
 .gallery-item:hover img {
     transform: scale(1.1);
     filter: brightness(0.8);
 }
 
-/* ===== MODAL ===== */
 
 .gallery-modal {
     display: none;
@@ -1412,7 +1335,6 @@ footer{
     background-color: rgba(0,0,0,0.9);
 }
 
-/* IMAGEN GRANDE */
 .modal-img {
     display: block;
     margin: 5% auto;
@@ -1421,7 +1343,6 @@ footer{
     border-radius: 10px;
 }
 
-/* BOTÓN CERRAR */
 .close {
     position: absolute;
     top: 20px;
@@ -1436,7 +1357,6 @@ footer{
     transform: scale(1.2);
 }
 
-/* ===== RESPONSIVE ===== */
 
 .contact-section {
     height: 70vh;
@@ -1705,6 +1625,23 @@ footer{
         height: 45px;    
         font-size: 18px;
         
+    }
+
+    .donate-section {
+        position: relative;
+        height: 65vh;
+
+    }
+
+    .donate-section .donate-container {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        border-radius: 0;
+
     }
 
 
