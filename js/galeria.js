@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
             { id: 7, src: "img/img_5.png" },
             { id: 8, src: "img/acolitos-sacerdote.jpeg" },
             { id: 9, src: "img/acolitos-SP.jpeg" },
-            { id: 9, src: "img/sacerdote-caliz-hostia.jpeg" },
+            { id: 10, src: "img/Sacerdote-caliz-hostia.jpeg" },
 
         ]
     };
