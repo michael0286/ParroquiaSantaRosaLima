@@ -8,12 +8,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Tienne:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
+    <script src="js/burguer.js"></script>
 </head>
 <body>
-    <header class="header">
+   <header class="header">
         <div class="header-logo">
-            <img src="img/icons8logo50.png" alt="logo-parroquia-santa-rosa-lima">
-            <h1 class="header-title"><a href="index.html">Parroquia Santa Rosa de Lima</a></h1>
+            <img class="burguer" src="img/icons8-menu-70.png" alt="logo-parroquia-santa-rosa-lima">
+            <h1 class="header-title"><a href="index.html">Acólitos Santa Rosa de Lima</a></h1>
         </div>
         <nav class="navbar">
             <ul class="navbar-list">
@@ -25,54 +26,59 @@
         </nav>
     </header>
     <main>
-        <section class="about-us-display">
+       <section class="about-us-display">
+            <picture class="about-bg">
+                <source srcset="https://picsum.photos/id/122/1300/720" media="(min-width:1025px)">
+                <source srcset="https://picsum.photos/id/122/1024/640" media="(min-width:720px)">
+                <img src="https://picsum.photos/id/122/480/480" alt="Sobre nosotros" />
+            </picture>
+
             <div class="about-us-display-container">
                 <h2>Acerca de Nosotros</h2>
                 <p>Parroquia de Santa Rosa de Lima</p>
             </div>
-        </section>
+     </section>
         <section class="about-us-info">
-            <div class="about-us-info-container">
-                <div class="about-us-text-container">
-                    <h2>¿Quienes Somos?</h2>
-                    <p>Somos el grupo de acólitos de la Parroquia Santa Rosa de Lima, una comunidad de jóvenes y adultos llamados al servicio del altar. 
-                        Nuestra labor principal es asistir a los sacerdotes durante la celebración de la Santa Eucaristía y los sacramentos, viviendo nuestra fe con entrega, orden y alegría desde el corazón de nuestra parroquia.</p>
+            <div class="about-row">
+                <div class="about-text">
+                    <h2>¿Quiénes Somos?</h2>
+                    <p>Somos el grupo de acólitos de la Parroquia Santa Rosa de Lima, una comunidad de jóvenes y adultos llamados al servicio del altar. Nuestra labor principal es asistir a los sacerdotes durante la celebración de la Santa Eucaristía.</p>
                 </div>
-                <div class="about-us-img-container">
-                        <img src="img/josh-applegate-TkFw4tgpTDME.jpg" alt="Imagen de una Estatua de José">
+                <div class="about-img">
+                    <img src="img/acolito-1.jpeg" alt="Acólitos sirviendo">
                 </div>
             </div>
-            <div class="about-us-info-container">
-                <div class="about-us-text-container">
+
+            <div class="about-row">
+                <div class="about-text">
                     <h2>Misión</h2>
-                    <p>Nuestra misión es servir con reverencia y dignidad en el altar del Señor, facilitando la liturgia para que la comunidad pueda encontrarse con Dios. 
-                        Buscamos formarnos integralmente en la fe católica, promoviendo el compañerismo y el testimonio de vida cristiana dentro y fuera del templo.</p>
+                    <p>Nuestra misión es servir con reverencia y dignidad en el altar del Señor, facilitando la liturgia para que la comunidad pueda encontrarse con Dios. Buscamos formarnos integralmente en la fe católica.</p>
                 </div>
-                <div class="about-us-img-container">
-                        <img src="img/josh-applegate-TkFw4tgpTDME.jpg" alt="Imagen de una Estatua de José">
+                <div class="about-img">
+                    <img src="img/santo.jpeg" alt="Imagen de Misión">
                 </div>
             </div>
-            <div class="about-us-info-container">
-                <div class="about-us-text-container">
+
+            <div class="about-row">
+                <div class="about-text">
                     <h2>Visión</h2>
-                    <p>Aspiramos a ser un grupo de referencia en la formación litúrgica y espiritual, reconocido por nuestra piedad y compromiso. 
-                        Queremos ser un semillero de vocaciones y un espacio donde cada miembro descubra su propósito en la Iglesia, fortaleciendo nuestra comunidad parroquial a través del servicio ejemplar.</p>
+                    <p>Aspiramos a ser un grupo de referencia en la formación litúrgica y espiritual, reconocido por nuestra piedad y compromiso. Queremos ser un semillero de vocaciones.</p>
                 </div>
-                <div class="about-us-img-container">
-                        <img src="img/josh-applegate-TkFw4tgpTDME.jpg" alt="Imagen de una Estatua de José">
+                <div class="about-img">
+                    <img src="img/custodio.jpeg" alt="Imagen de Visión">
                 </div>
-            </div>          
+            </div>
         </section>
         <section class="about-us-team">
             <div class="about-us-team-container">
                 <div class="about-us-team-title">
                     <h2>Conoce a Nuestros Miembros</h2>
-                </div>
-                <div class="about-us-team-img">
-                    <img src="img/josh-applegate-TkFw4tgpTDME.jpg" alt="Imagen que muestra a los miembros de la parroquia">
-                </div>
+                    <div class="title-underline"></div> </div>
+                
+                <div class="about-us-team-img-wrapper">
+                    <img src="img/miembros.jpeg" alt="Miembros de la parroquia Santa Rosa de Lima">
+                    <div class="img-overlay"></div> </div>
             </div>
-
         </section>
     </main>
     <footer>
