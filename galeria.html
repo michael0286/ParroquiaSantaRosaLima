@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería - Parroquia Santa Rosa de Lima</title>
+
+    <!-- FUENTES -->
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Tienne:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <!-- TU CSS -->
+     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/galeria.css">
+
+    <!-- JS -->
+    <script src="js/burguer.js"></script>
+    <script src="js/galeria.js" defer></script>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="header-logo">
+        <img class="burguer" src="img/icons8-menu-70.png">
+        <h1><a href="index.html">Acólitos Santa Rosa de Lima</a></h1>
+    </div>
+
+    <nav class="navbar">
+        <ul class="navbar-list">
+            <li class="nav-item"><a href="index.html">Inicio</a></li>
+            <li class="nav-item"><a href="about-us.html">Acerca de</a></li>
+            <li class="nav-item"><a href="galeria.html">Galería</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- MAIN -->
+<main>
+
+<section class="gallery-section">
+
+    <div class="gallery-title">
+        <h2>Nuestra Galería</h2>
+        <p>Momentos vividos en la fe y servicio a Dios</p>
+    </div>
+
+    <div class="gallery-grid" id="galleryContainer"></div>
+
+</section>
+
+<!-- MODAL -->
+<div class="gallery-modal" id="modal">
+    <span class="close">&times;</span>
+    <img class="modal-img" id="modalImg">
+</div>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <section class="footer-info">
+        <div class="footer-info-container">
+
+            <div class="follow-us">
+                <h2>Síguenos</h2>
+                <ul>
+                    <li><img src="img/icons8logo50.png"></li>
+                    <li><img src="img/icons8logo50.png"></li>
+                    <li><img src="img/icons8logo50.png"></li>
+                </ul>
+            </div>
+
+            <div class="address-info">
+                <h2>Ubicación</h2>
+                <ul>
+                    <li>Tegucigalpa, Guaimaca</li>
+                    <li>Pedregal</li>
+                    <li>5ta Avenida</li>
+                </ul>
+            </div>
+
+            <div class="contact-info">
+                <h2>Contacto</h2>
+                <ul>
+                    <li>1234-5678</li>
+                    <li>parroquia@gmail.com</li>
+                </ul>
+            </div>
+
+            <div class="navigation-info">
+                <h2>Explorar</h2>
+                <ul>
+                    <li><a href="#">Acerca de</a></li>
+                    <li><a href="#">Contáctanos</a></li>
+                    <li><a href="#">Donar</a></li>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="footer-copyright">
+        <span>Parroquia SRL &copy; Todos los Derechos Reservados</span>
+    </section>
+</footer>
+
+</body>
+</html>
