@@ -1631,7 +1631,7 @@ footer{
         justify-content: center;
         text-align: center;
         height: auto;
-        min-height: 100vh;
+        min-height: 65vh;
         padding: 40px 20px;
     }
 
@@ -1668,6 +1668,7 @@ footer{
         max-width: 100%; 
     }
 
+
     .news-section {
         padding: 40px 15px;
         height: auto; 
@@ -1683,7 +1684,7 @@ footer{
 
     .more-info-section {
         height: auto;
-        min-height: 100vh;
+        min-height: 60vh;
         padding: 60px 20px; 
     }
 
@@ -1701,7 +1702,6 @@ footer{
     }
 
     .info-container button {
-        width: 60%;    
         height: 45px;    
         font-size: 18px;
         
@@ -1725,7 +1725,6 @@ footer{
 
     .donate-section .donate-container button{
         font-size: 18px;
-        width: 35%;
         
 
     }
