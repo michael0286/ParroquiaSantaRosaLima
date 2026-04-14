@@ -642,7 +642,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(98, 95, 145, 0.5), rgba(0, 0, 0, 0.6));
+    background: linear-gradient(rgba(50, 49, 68, 0.5), rgba(0, 0, 0, 0.6));
     z-index: 2;
 }
 
@@ -787,6 +787,7 @@ footer{
 
 @media (max-width: 720px) {
 
+    
 
     .header-logo img {
         display: block;
@@ -836,6 +837,14 @@ footer{
     .mobile-nav li {
         list-style: none;
         border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .mobile-nav #nav-about,
+    .mobile-nav #nav-help,
+    .mobile-nav #nav-blog,
+    .mobile-nav #nav-events,
+    .mobile-nav #nav-contact {
+        display: block !important;
     }
 
     .mobile-nav li a {
@@ -986,7 +995,7 @@ footer{
     }
 
     .about-row, .about-row:nth-child(even) {
-        flex-direction: column; /* Todo a una columna */
+        flex-direction: column !important; 
         margin-bottom: 60px;
         padding: 0 20px;
     }
@@ -1014,6 +1023,41 @@ footer{
     }
 
 }
+
+@media (min-width: 721px) and (max-width: 1023px) {
+
+    .header-logo h1{
+        font-size: 24px;
+
+    }
+
+    .navbar {
+        display: none;
+
+    }
+
+    .mobile-nav {
+        display: none; 
+        flex-direction: column;
+        background-color: var(--very-dark-blue);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 30%; 
+        height: 100%; 
+        z-index: 9999; 
+        padding: 40px 20px;
+        text-align: left;
+        box-shadow: 5px 0 15px rgba(0,0,0,0.5); 
+    }
+
+    
+    .hero-section-CTA {
+        padding-left: 5%;
+    }
+
+}
+
 
 .about-us-display {
     position: relative; 
@@ -1089,11 +1133,10 @@ footer{
     align-items: center;
     justify-content: center;
     max-width: 1200px;
-    margin: 0 auto 40px auto; /* Espacio entre filas */
+    margin: 0 auto 40px auto; 
     padding: 0 5%;
 }
 
-/* El famoso Zig-Zag */
 .about-row:nth-child(even) {
     flex-direction: row-reverse;
 }
@@ -1103,7 +1146,7 @@ footer{
     padding: 40px;
 }
 
-/* Estilos de Texto */
+
 .about-text h2 {
     font-family: "Tienne", serif;
     font-weight: 700;
@@ -1121,10 +1164,10 @@ footer{
     text-align: justify;
 }
 
-/* Estilos de Imagen */
+
 .about-img img {
     width: 100%;
-    height: 400px; /* Altura fija para mantener simetría */
+    height: 400px; 
     object-fit: cover;
     border-radius: 15px;
     box-shadow: 0 15px 30px rgba(0,0,0,0.4);
