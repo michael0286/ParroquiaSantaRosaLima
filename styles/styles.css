@@ -642,7 +642,11 @@
     left: 0;
     width: 100%;
     height: 100%;
+<<<<<<< HEAD
     background: linear-gradient(rgba(50, 49, 68, 0.5), rgba(0, 0, 0, 0.6));
+=======
+    background: linear-gradient(rgba(98, 95, 145, 0.5), rgba(0, 0, 0, 0.6));
+>>>>>>> origin/master
     z-index: 2;
 }
 
@@ -787,7 +791,10 @@ footer{
 
 @media (max-width: 720px) {
 
+<<<<<<< HEAD
     
+=======
+>>>>>>> origin/master
 
     .header-logo img {
         display: block;
@@ -839,6 +846,7 @@ footer{
         border-bottom: 1px solid rgba(255,255,255,0.1);
     }
 
+<<<<<<< HEAD
     .mobile-nav #nav-about,
     .mobile-nav #nav-help,
     .mobile-nav #nav-blog,
@@ -847,6 +855,8 @@ footer{
         display: block !important;
     }
 
+=======
+>>>>>>> origin/master
     .mobile-nav li a {
         color: white;
         text-decoration: none;
@@ -995,7 +1005,11 @@ footer{
     }
 
     .about-row, .about-row:nth-child(even) {
+<<<<<<< HEAD
         flex-direction: column !important; 
+=======
+        flex-direction: column; /* Todo a una columna */
+>>>>>>> origin/master
         margin-bottom: 60px;
         padding: 0 20px;
     }
@@ -1024,6 +1038,7 @@ footer{
 
 }
 
+<<<<<<< HEAD
 @media (min-width: 721px) and (max-width: 1023px) {
 
     .header-logo h1{
@@ -1059,6 +1074,8 @@ footer{
 }
 
 
+=======
+>>>>>>> origin/master
 .about-us-display {
     position: relative; 
     width: 100%;
@@ -1133,10 +1150,18 @@ footer{
     align-items: center;
     justify-content: center;
     max-width: 1200px;
+<<<<<<< HEAD
     margin: 0 auto 40px auto; 
     padding: 0 5%;
 }
 
+=======
+    margin: 0 auto 40px auto; /* Espacio entre filas */
+    padding: 0 5%;
+}
+
+/* El famoso Zig-Zag */
+>>>>>>> origin/master
 .about-row:nth-child(even) {
     flex-direction: row-reverse;
 }
@@ -1146,7 +1171,11 @@ footer{
     padding: 40px;
 }
 
+<<<<<<< HEAD
 
+=======
+/* Estilos de Texto */
+>>>>>>> origin/master
 .about-text h2 {
     font-family: "Tienne", serif;
     font-weight: 700;
@@ -1164,10 +1193,17 @@ footer{
     text-align: justify;
 }
 
+<<<<<<< HEAD
 
 .about-img img {
     width: 100%;
     height: 400px; 
+=======
+/* Estilos de Imagen */
+.about-img img {
+    width: 100%;
+    height: 400px; /* Altura fija para mantener simetría */
+>>>>>>> origin/master
     object-fit: cover;
     border-radius: 15px;
     box-shadow: 0 15px 30px rgba(0,0,0,0.4);
@@ -1226,4 +1262,9 @@ footer{
 .about-us-team-img-wrapper img:hover {
     transform: scale(1.02);
     box-shadow: 0 30px 60px rgba(0, 0, 0, 0.7);
+<<<<<<< HEAD
 }
+=======
+}
+
+>>>>>>> origin/master
